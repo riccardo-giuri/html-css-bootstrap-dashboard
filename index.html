@@ -49,8 +49,9 @@
         </header>
 
         <main>
-            <section>
-                <div class="sidebar px-3 py-4">
+            <div class="container-fluid px-0 d-flex">
+
+                <div class="sidebar px-3 py-4 flex-shrink-0">
                     <ul class="nav flex-column nav-hover">
                         <li class="nav-item">
                             <a href="#" class="nav-link fs-5">
@@ -83,11 +84,37 @@
                         </li>
                     </ul>
                 </div>
-            </section>
 
-            <section class="main-content">
+                <div class="main_navbar d-flex justify-content-between flex-grow-1 align-items-center bg_blue py-4 px-3">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex align-items-center gap-2">
+                            <h2 class="d-inline-block text-white">Boolean</h2>
+                            <span class="badge bg_darkblue rounded-pill">Piano Blaze</span>
+                        </div>
+    
+                        <div class="w-100 bg_blue d-flex align-items-center gap-2">
+                            <span class="badge bg_darkblue rounded-pill">3 app</span>
+                            <i class="fa-solid fa-angles-right text-white"></i>
+                            <span class="badge bg_darkblue rounded-pill">Boolean mobile app</span>
+                            <span class="badge bg_darkblue rounded-pill">Boolean web app</span>
+                            <span class="badge bg_darkblue rounded-pill">Boolean blog app</span>
+                        </div>
+                    </div>
 
-            </section>
+                    <div class="d-flex flex-column">
+                        <div class="text-white fs-5">Studenti online negli ultimi 30 minuti</div>
+                        <div class="text-white fw-bold fs-2">125</div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center align-self-start gap-3 pe-5 me-5">
+                        <div class="text-white fs-6">Nuovo Studente</div>
+                        <button class="btn btn-outline-light border-2">
+                            <span><i class="fa-solid fa-plus plus"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
         </main>
     </body>
 </html>

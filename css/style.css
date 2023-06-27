@@ -10,6 +10,26 @@
     background-color: #e5e5e5;
 }
 
+.bg_darkblue {
+    background-color: #165bba;
+}
+
+.bg_blue {
+    background-color: #1b72e8;
+}
+
+.main_navbar {
+    height: 125px;
+}
+
+.plus {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+
+
 .searchbar{
     width: auto;
     flex-grow: 1;
