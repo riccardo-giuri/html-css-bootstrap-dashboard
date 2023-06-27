@@ -28,7 +28,9 @@
     height: 15px;
 }
 
-
+td img {
+    width: 30px;
+}
 
 .searchbar{
     width: auto;
