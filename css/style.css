@@ -2,6 +2,10 @@
     --main_width: calc(100vh - 58px);
 }
 
+* {
+    overflow: hidden;
+}
+
 .body {
     height: 100vh;
 }
@@ -19,7 +23,7 @@
 }
 
 .main_navbar {
-    height: 125px;
+    min-height: 125px;
 }
 
 .plus {
@@ -30,6 +34,10 @@
 
 td img {
     width: 30px;
+}
+
+.logo_height {
+    height: 45px;
 }
 
 .searchbar{

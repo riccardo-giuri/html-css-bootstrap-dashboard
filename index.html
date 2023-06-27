@@ -16,8 +16,12 @@
         <header>
             <nav class="navbar">
                 <div class="container-fluid gap-4 mx-2">
-                    <a class="navbar-brand me-0" href="#">
+                    <a class="navbar-brand me-0 d-none d-md-inline-block" href="#">
                         <img src="img/logo.svg" alt="Logo">
+                    </a>
+
+                    <a class="navbar-brand me-0 d-inline-block d-md-none" href="#">
+                        <img class="logo_height" src="img/mobile-logo.png" alt="Logo">
                     </a>
 
                     <div class="input-group searchbar">
@@ -28,15 +32,15 @@
                     </div>
 
                     <ul class="navbar-nav flex-row gap-4">
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-md-inline-block">
                             <a class="nav-link" href="#"><i class="fa-solid fa-list fs-5"></i></a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-md-inline-block">
                             <a class="nav-link" href="#"><i class="fa-solid fa-circle-question fs-5"></i></a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-md-inline-block">
                             <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical fs-5"></i></a>
                         </li>
 
@@ -87,9 +91,9 @@
                 </div>
 
                 <!-- main container -->
-                <div class="flex-grow-1">
-                    <div class="main_navbar d-flex justify-content-between  align-items-center bg_blue py-4 px-3">
-                        <div class="d-flex flex-column">
+                <div class="flex-grow-1 overflow-auto">
+                    <div class="main_navbar d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-4 gap-md-0 bg_blue py-4 px-3">
+                        <div class="d-flex flex-column me-3">
                             <div class="d-flex align-items-center gap-2">
                                 <h2 class="d-inline-block text-white">Boolean</h2>
                                 <span class="badge bg_darkblue rounded-pill">Piano Blaze</span>
@@ -98,18 +102,19 @@
                             <div class="w-100 bg_blue d-flex align-items-center gap-2">
                                 <span class="badge bg_darkblue rounded-pill">3 app</span>
                                 <i class="fa-solid fa-angles-right text-white"></i>
-                                <span class="badge bg_darkblue rounded-pill">Boolean mobile app</span>
-                                <span class="badge bg_darkblue rounded-pill">Boolean web app</span>
-                                <span class="badge bg_darkblue rounded-pill">Boolean blog app</span>
+                                <span class="badge bg_darkblue rounded-circle d-inline-block d-xl-none"><i class="fa-solid fa-plus text-white"></i></span>
+                                <span class="badge bg_darkblue rounded-pill d-none d-xl-inline-block">Boolean mobile app</span>
+                                <span class="badge bg_darkblue rounded-pill d-none d-xl-inline-block">Boolean web app</span>
+                                <span class="badge bg_darkblue rounded-pill d-none d-xl-inline-block">Boolean blog app</span>
                             </div>
                         </div>
     
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column me-3">
                             <div class="text-white fs-5">Studenti online negli ultimi 30 minuti</div>
                             <div class="text-white fw-bold fs-2">125</div>
                         </div>
     
-                        <div class="d-flex flex-row align-items-center align-self-start gap-3 pe-5 me-5">
+                        <div class="d-flex flex-row align-items-center align-self-start gap-3 me-3">
                             <div class="text-white fs-6">Nuovo Studente</div>
                             <button class="btn btn-outline-light border-2">
                                 <span><i class="fa-solid fa-plus plus"></i></span>
@@ -117,16 +122,16 @@
                         </div>
                     </div>
 
-                    <div class="container-fluid mt-4 overflow-auto">
+                    <div class="container-fluid mt-4 overflow-y-auto">
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-12 col-xl-8">
                                 <div class="card">
                                     <div class="card-header h2 py-2">Prossime Classi</div>
                                     <div class="card-body">
                                         <table class="table fw-semibold">
                                             <thead>
                                                 <tr>
-                                                  <th style="width: 60%" scope="col">Nome</th>
+                                                  <th style="width: 45%" scope="col">Nome</th>
                                                   <th scope="col">Data Inizio</th>
                                                   <th scope="col">ROI</th>
                                                   <th scope="col">Stato</th>
@@ -298,7 +303,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-4">
+                            <div class="col-12 col-xl-4">
                                 <div class="card">
                                     <div class="card-header h2 py-2">Todo</div>
                                     <div class="card-body">
