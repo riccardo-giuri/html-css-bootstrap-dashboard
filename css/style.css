@@ -1,0 +1,12 @@
+.body {
+    height: 100vh;
+}
+
+.bg_lightgray {
+    background-color: #e5e5e5;
+}
+
+.searchbar{
+    width: auto;
+    flex-grow: 1;
+}
